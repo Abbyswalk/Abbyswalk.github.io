@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Abby Walker Portfolio</title>
-        <link rel="stylesheet" href="./styles/style.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="row">
-                <nav class="nav">
-                    <ul class="nav-items">
-                        <a href="../index.html">Home</a>
-                        <a href="./about.html">About Me</a>
-                        <a href="./resume.html">Resume</a>
-                        <a href="./contact.html">Contact Me</a>
-                    </ul>
-                </nav>
-            </div>
-            <h3>Contact Me</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="../scripts/contact.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-        </div>
-    </body>
-    <footer>
 
-    </footer>
+<head>
+    <meta charset="UTF-8">
+    <title>Abby Walker Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="row">
+            <nav class="nav">
+                <ul class="nav-items">
+                    <a href="../index.html">Home</a>
+                    <a href="./about.html">About Me</a>
+                    <a href="./resume.html">Resume</a>
+                    <a href="./contact.html">Contact Me</a>
+                </ul>
+            </nav>
+        </div>
+        <h3>Contact Me</h3>
+        <form action="contact.php" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+
+            <input type="submit" value="Submit">
+        </form>
+    
+    </header>
+</body>
+<footer>
+
+</footer>
+
 </html>
