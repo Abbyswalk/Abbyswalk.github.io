@@ -25,18 +25,16 @@
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
     
-            <!-- Email Field -->
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
-    
-            <!-- Message Field -->
+
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
     
-            <!-- Hidden Field to Prevent Spam -->
+            <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://abbyswalk.github.io/pages/submit.html">
     
-            <!-- Submit Button -->
             <input type="submit" value="Submit">
         </form>
     </header>
