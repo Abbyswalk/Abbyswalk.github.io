@@ -20,23 +20,25 @@
             </nav>
         </div>
         <h3>Contact Me</h3>
-        <form action="contact.php" method="POST">
-
+        <form action="https://formsubmit.co/aswalker205@gmail.com" method="POST">
+            <!-- Name Field -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
     
-
+            <!-- Email Field -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
     
-
+            <!-- Message Field -->
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
     
-
+            <!-- Hidden Field to Prevent Spam -->
+            <input type="hidden" name="_next" value="https://your-website.com/thank-you-page.html">
+    
+            <!-- Submit Button -->
             <input type="submit" value="Submit">
         </form>
-    
     </header>
 </body>
 <footer>
