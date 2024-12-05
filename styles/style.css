@@ -272,4 +272,56 @@ button:hover {
     transition: color 0.3s;
 }
 
+.container-resume {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
+.container-resume h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.contact-resume {
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.contact-resume a {
+    color: #db5461;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px;
+}
+
+th {
+    font-size: 20px;
+    border-bottom: 2px solid #db5461;
+}
+
+td {
+    border-bottom: 1px solid #db5461;
+}
+
+.education-table td {
+    width: 33%;
+}
+
+.experience-table td {
+    padding-bottom: 20px;
+}
