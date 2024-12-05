@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
     <title>Abby Walker Portfolio</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,34 +13,39 @@
 
 <body>
     <header>
+        <a href="../index.html" class="logo">Abby Walker</a>
         <nav>
-            <a href="./index.html" class="logo">Abby Walker</a>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./about.html">About Me</a></li>
-                <li><a href="./resume.html">Resume</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a class="active" href="./contact.html">Contact Me</a></li>
-            </ul>
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./projects.html">Projects</a>
+            <a class="active" href="./contact.html">Contact Me</a>
         </nav>
     </header>
-        <h3>Contact Me</h3>
-        <form action="https://formsubmit.co/aswalker205@gmail.com" method="POST">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://abbyswalk.github.io/pages/submit.html">
-
-            <input type="submit" value="Submit">
-        </form>
+    <div class="container">
+        <div class="form-section">
+            <h2>Contact Me</h2>
+            <form action="https://formsubmit.co/aswalker205@gmail.com" method="POST">
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="email" placeholder="E-Mail" required>
+                <input type="tel" placeholder="Phone" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://abbyswalk.github.io/pages/submit.html">
+            </form>
+        </div>
+        <div class="info-section">
+            <h3> Contact Information</h3>
+            <p>Abby Walker</p>
+            <a href="mailto:aswalker205@gmail.com">aswalker205@gmail.com</a>
+            <hr>
+            <a href="tel:6145638878">614-563-8878</a>
+        </div>
+    </div>
 </body>
 <footer>
 
