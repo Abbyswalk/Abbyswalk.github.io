@@ -4,40 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Abby Walker Portfolio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="row">
-            <nav class="nav">
-                <ul class="nav-items">
-                    <a href="../index.html">Home</a>
-                    <a href="./about.html">About Me</a>
-                    <a href="./resume.html">Resume</a>
-                    <a href="./contact.html">Contact Me</a>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <a href="./index.html" class="logo">Abby Walker</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a class="active" href="./contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
         <h3>Contact Me</h3>
         <form action="https://formsubmit.co/aswalker205@gmail.com" method="POST">
-            <!-- Name Field -->
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
-    
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
 
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    
+
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://abbyswalk.github.io/pages/submit.html">
-    
+
             <input type="submit" value="Submit">
         </form>
-    </header>
 </body>
 <footer>
 
