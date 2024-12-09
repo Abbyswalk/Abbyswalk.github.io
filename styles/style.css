@@ -71,7 +71,7 @@ a:hover {
         border-left: 3px solid #db5461;
         border-bottom: 3px solid #db5461;
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 1rem;
         background-color: #3d5467;
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     }
@@ -135,7 +135,7 @@ span {
     position: relative;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #db5461;
+    box-shadow: 0 0 25px #db5461;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -182,7 +182,6 @@ span {
 }
 
 .button:hover {
-    transform: scale3d(1.03);
     background-color: #db5461;
     color: #3d5467;
     box-shadow: 0 0 25px #db5461;
