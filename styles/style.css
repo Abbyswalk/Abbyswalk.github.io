@@ -1,6 +1,4 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,8 +62,8 @@ a:hover {
     border-bottom: 3px solid #db5461;
 }
 
-@media(max-width:995px){
-    nav{
+@media(max-width:995px) {
+    nav {
         position: absolute;
         top: 0;
         right: 0;
@@ -89,7 +87,7 @@ a:hover {
     }
 
     nav a:hover,
-    nav a.active{
+    nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #db5461;
@@ -184,10 +182,10 @@ span {
 }
 
 .button:hover {
-transform: scale3d(1.03);
-background-color: #db5461;
-color: #3d5467;
-box-shadow: 0 0 25px #db5461;
+    transform: scale3d(1.03);
+    background-color: #db5461;
+    color: #3d5467;
+    box-shadow: 0 0 25px #db5461;
 }
 
 .container {
@@ -219,7 +217,8 @@ form {
     gap: 35px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: none;
@@ -229,7 +228,8 @@ input, textarea {
     color: #3d5467;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border: 1px solid #db5461;
 }
@@ -273,7 +273,7 @@ button:hover {
 }
 
 .container-resume {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 100px auto;
     padding: 20px;
     background: #fff;
@@ -303,7 +303,8 @@ table {
     margin: 20px 0;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     vertical-align: top;
     padding: 8px;
@@ -333,4 +334,106 @@ footer {
     width: 100%;
     text-align: center;
     color: #3d5467;
+}
+
+.projects {
+    text-align: center;
+    padding: 2em;
+}
+
+.projects h1 {
+    font-size: 2.5em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.button-projects {
+    display: inline-block;
+    padding: 1em 1.5em;
+    background-color: #3d5467;
+    border-radius: 4rem;
+    font-size: 0.8rem;
+    color: #f1edee;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 2px solid #db5461;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.button-git {
+    display: inline-block;
+    padding: 1.5em 2em;
+    background-color: #3d5467;
+    border-radius: 4rem;
+    font-size: 0.8rem;
+    color: #f1edee;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 2px solid #db5461;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #851010;
+    border-radius: 8px;
+}
+
+#display {
+    background-color: #222;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+}
+
+.button-calc {
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #444;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-calc:hover {
+    background-color: #555;
+}
+
+.buttons-calc {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
 }

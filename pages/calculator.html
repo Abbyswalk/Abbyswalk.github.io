@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+    <title>Abby Walker Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="logo">Abby Walker</a>
+        <nav>
+            <a href="../index.html">Home</a></li>
+            <a href="./about.html">About Me</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <div class="calculator">
+        <div id="display">
+            0
+        </div>
+        <div class="buttons-calc">
+            <button class="button-calc" onclick="clearDisplay()">C</button>
+            <button class="button-calc" onclick="appendToDisplay('/')">/</button>
+            <button class="button-calc" onclick="appendToDisplay('*')">*</button>
+            <button class="button-calc" onclick="appendToDisplay('-')">-</button>
+            <button class="button-calc" onclick="appendToDisplay('7')">7</button>
+            <button class="button-calc" onclick="appendToDisplay('8')">8</button>
+            <button class="button-calc" onclick="appendToDisplay('9')">9</button>
+            <button class="button-calc" onclick="appendToDisplay('+')">+</button>
+            <button class="button-calc" onclick="appendToDisplay('4')">4</button>
+            <button class="button-calc" onclick="appendToDisplay('5')">5</button>
+            <button class="button-calc" onclick="appendToDisplay('6')">6</button>
+            <button class="button-calc" onclick="calculateResult()">=</button>
+            <button class="button-calc" onclick="appendToDisplay('1')">1</button>
+            <button class="button-calc" onclick="appendToDisplay('2')">2</button>
+            <button class="button-calc" onclick="appendToDisplay('3')">3</button>
+            <button class="button-calc" onclick="appendToDisplay('0')">0</button>
+            <button class="button-calc" onclick="appendToDisplay('.')">.</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2024 Abby Walker. All rights reserved.</p>
+</footer>
+
+</html>
