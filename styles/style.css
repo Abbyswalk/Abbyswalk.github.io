@@ -405,12 +405,14 @@ footer {
 
 .calculator {
     width: 300px;
-    background-color: #851010;
+    background-color: #db5461;
     border-radius: 8px;
+    margin-top: 200px;
+    margin-left: 100px;
 }
 
 #display {
-    background-color: #222;
+    background-color: #3d5467;
     color: white;
     font-size: 2em;
     padding: 20px;
@@ -420,7 +422,7 @@ footer {
 .button-calc {
     font-size: 1.5rem;
     padding: 15px;
-    background-color: #444;
+    background-color: #3d5467;
     color: #FFF;
     border: none;
     border-radius: 5px;
